@@ -1,6 +1,6 @@
 
 h1{
-    color:red;
+    color:darkmagenta;
     text-align:center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 28px;
@@ -44,10 +44,10 @@ button:hover{
     background-color:green;
 }
 @media (min-width:600px){
-    body{background-color:grey}
+    body{background-color:lightgrey}
 }
 @media (max-width:599px){
-    body{background-color:lightgray}
+    body{background-color:darkgray}
 }
 #container {
     display:flex;
