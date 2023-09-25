@@ -1,143 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>My first webpage for CS50 </title>
-        <link rel="stylesheet" href="Styles2.css">
+        <title>Search</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1>Welcome to my Web page!</h1>
-        Hello world!
-        <p>This starts with html</p>
-        <h1>Lists</h1>
-        An unordered list
-        <ul>
-            <li>One item</li>
-            <li>Another element</li>
-        </ul>
-        An ordered list:
-        <ol>
-            <li>First item</li>
-            <li>Second item</li>
-            <li>Third item</li>
-        </ol>
-        <h1>Images</h1>
-        <img src="cat2.jfif" alt="Cat" width="300">
-        <br>
-        <h1>Links</h1>
-        <a href="HTTPS://WWW.Google.com">Click here for a link to Google</a>
-        <br>
-        <a href="Test2.html">Click here for a link to another webpage</a>
-        <h1>Tables</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Ocean</th>
-                    <th>Average depth</th>
-                    <th>Max depth</th>    
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Pacific Ocean</td>
-                    <td>4,280m</td>
-                    <td>10,911m</td>
-                </tr>
-            </tbody>
-        </table>
-        <h1>Input forms</h1>
-        <form>
-            <div>
-                <input type="text" placeholder="Full name" name="fullname">
-                <input type="password" placeholder="Password" name="password"
-                <input type="submit">
-            </div>
-            <div>
-                Favourite colour
-                <input name="colour" type="radio" value="red"> Red
-                <input name="colour" type="radio" value="green"> Green
-            </div>
-            <div>
-                Choose your country of origin
-                <input name="country" list="countries" placeholder="Country">
-                <datalist id="countries">
-                    <option value="Spain">
-                    <option value="UK">
-                    </option>
-                </datalist>
+        <div> 
+            <ul class="navigationbar">
+                <li class="navigationitem"><a href="searchimage.html">Image search</a></li>
+                <li class="navigationitem"><a href="searchadvanced.html">Advanced search</a></li>
+            </ul>
+        </div>
+        <div class="center">
+            <img src="googlelogo.png" alt="Google logo" width="272" height="92" >
+        </div>
+        <form action="https://www.google.com/search">
+            <input class="searchbox" type="text" name="q">
+            <div class="center">   
+                <input class="searchbutton" type="submit" value="Google Search">
+                <input class="searchbutton" type="submit" name="btnI" value="I'm feeling lucky">
             </div>
         </form>
-        <h1>Testing sizes</h1>
-        <div>
-            Hello, world!
-        </div>
-        <p>This is the end of html, what comes ahead is CSS testing</p>
-        <hr>
-        <h1 id="specialidtitle">Special items using id</h1>
-        To style a unique item use id, which needs a # to call the item
-        <h1 class="specialclasstitle">Special items using class</h1>
-        To style a class of items use class, which needs a . to call the item
-        <h1>Specificity is like a hierarchy order of what is most precise</h1>
-        <ol>
-            <li>inline</li>
-            <li>id represented by #</li>
-            <li>class represented by .</li>
-            <li>type ie is this a h1</li>
-        </ol>
-        <h1>Testing dependencies</h1>
-        You can specify define design only for only certain dependencies
-        <ol>
-            <li>item 1</li>
-            <li>item 2</li>
-            <ul>
-                <li>item 2.1</li>
-                <li>item 2.2</li>
-            </ul>
-            <li>item 3</li>
-        </ol>
-        <h1>Testing CSS selectors</h1>
-        CSS selectors are ways in which you can specify how styling is applied
-        <ol>
-            <li><a href="https://www.google.com">Google</a></li>
-            <li><a href="https://www.facebook.com">Facebook</a></li>
-        </ol>
-        <br>
-        We can also add pseudoclasses
-        <br>
-        <button>Click Me</button>
-        <h1>Responsive design</h1>
-        You can add meta data to make the design responsive to different viewport (screen) sizes
-        Flexbox is an easy way to show what happens items one after the other.
-        Grid is also an option
-        <div id="container">
-            <div>1.Hello this is a test to see how things adapt to device size</div>
-            <div>1.Hello this is a test to see how things adapt to device size</div>
-            <div>1.Hello this is a test to see how things adapt to device size</div>
-            <div>1.Hello this is a test to see how things adapt to device size</div>
-            <div>1.Hello this is a test to see how things adapt to device size</div>
-            <div>1.Hello this is a test to see how things adapt to device size</div>
-            <div>1.Hello this is a test to see how things adapt to device size</div>
-            <div>1.Hello this is a test to see how things adapt to device size</div>
-            <div>1.Hello this is a test to see how things adapt to device size</div>
-            <div>1.Hello this is a test to see how things adapt to device size</div>
-            <div>1.Hello this is a test to see how things adapt to device size</div>
-            <div>1.Hello this is a test to see how things adapt to device size</div>
-            <div>1.Hello this is a test to see how things adapt to device size</div>
-        </div>
-        <h1>Bootstrap</h1>
-        Bootstrap is a CSS library. Website is getbootstrap.com
-        <h1>SASS</h1>
-        <p>A way to reduce redundancy through the creation of variables</p>
-        <p>Needs a separate file because it's a different language as it has sass code</p>
-        <p>Sass is an extension to CSS that browsers don't understand, so we need to convert it</p>
-        <p>sass --watch file1.scss:file2.css</p>
-        <p>Next CSS selectors inside CSS selectors</p>
-        <p>Inheritance: Next CSS selectors inside CSS selectors, this uses @ to generate repeatable code</p>
-        <h1>GIT</h1>
-        <p>GIT tracks changes into code and helps collaboration with other people in an application</p>
-        <p>GitHub is a website that hosts code repositories online</p>
-        <br>
-        <p>test 1 for git tracking changes</p>
-        <p>gitpush pushes from the laptop to the web</p>
-        <p>gitpull pulls from github to the laptop</p>
     </body>
 </html>
