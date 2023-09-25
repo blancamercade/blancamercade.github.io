@@ -47,7 +47,8 @@ a:active {
     margin: 0 auto;
     width: 638px;
     max-width: 1048px;
-    margin-top:30px
+    margin-top:30px;
+    padding: 0px 16px;
 }
 
 .searchbutton {
@@ -57,7 +58,7 @@ a:active {
     font-family: arial,sans-serif;
     font-size: 14px;
     margin: 11px 4px;
-    padding: 0 16px;
+    padding: 0px 16px;
     line-height: 27px;
     height: 36px;
     min-width: 54px;
