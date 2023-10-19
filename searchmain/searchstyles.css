@@ -6,6 +6,7 @@ html * {
     display:flex;
     flex-direction:row;
     justify-content: right;
+    margin-right: 100px;
 }
 .navigationitem{
     margin:10px;

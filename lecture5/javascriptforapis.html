@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <Button id="homepage" onclick="window.location.href='../index.html'">Home</Button>
+        <title>Currency exchange</title>
+        <link rel="stylesheet" href="javapagestyles.css">
+        <link rel="stylesheet" href="../homepagebutton.css">
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){
+                document.querySelector('form').onsubmit=function(){
+                    fetch('https://open.er-api.com/v6/latest/USD')
+                    .then(response=>response.json())
+                    .then(data=>{
+                        console.log(data);
+                        const currency=document.querySelector('#currency').value.toUpperCase();
+                        const rate=data.rates[currency];
+                        if (rate!== undefined){
+                            document.querySelector('#exchangevalue').innerHTML=`1 USD is equal to ${rate} ${currency}`;
+                        } else {
+                            document.querySelector('#exchangevalue').innerHTML='Invalid currency.';
+                        }
+                        
+                    })
+                    .catch(error=>{
+                        console.log('Error:', error);
+                        document.querySelector('body').innerHTML=error;
+                    })
+                    return false;
+                }
+
+
+            })
+        </script>
+    </head>
+    <body>
+        <Button id="homepage" onclick="window.location.href='../index.html'"">Home</Button>
+        <h1>Currency exchange</h1>
+        <p>Type the currency you want to compare with USD</p>
+        <form>
+            <input id="currency" placeholder="Currency" type="text">
+            <input type="submit" value="Convert">
+        </form>
+        <p id="exchangevalue"></p>
+        <br>
+        <a href="https://www.exchangerate-api.com">Rates By Exchange Rate API</a>
+    </body>
+</html>

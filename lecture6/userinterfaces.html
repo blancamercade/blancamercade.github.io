@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Animate</title>
+        <link rel="stylesheet" href="../homepagebutton.css">
+        <style>
+            @keyframes move {
+                from{
+                    left:0%;
+                }
+                to{
+                    left:50%;
+                }
+            }
+            h1{
+                position:relative;
+                animation-name: move;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+            }
+            @keyframes grow {
+                from{
+                    font-size:20px;
+                }
+                to{
+                    font-size:100px;
+                }
+            }
+            h2{
+                animation-name: grow;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+                animation-delay: 2s;
+            }
+            @keyframes travelback {
+                0% {
+                    left:0%;
+                }
+                50% {
+                    left:50%;
+                }
+                100% {
+                    left:0%;
+                }
+            }
+            h3 {
+                position:relative;
+                animation-name: travelback;
+                animation-duration: 3s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
+                animation-delay: 0s;
+                animation-play-state: paused;
+            }
+        </style>
+        <script>
+            document.addEventListener('DOMContentLoaded',function(){
+                const h3=document.querySelector('h3');
+                h3.style.animationPlayState='paused';
+                document.querySelector('#move').onclick=() =>{
+                    if(h3.style.animationPlayState==='paused'){
+                        h3.style.animationPlayState='running';
+                    }
+                    else{
+                        h3.style.animationPlayState='paused';
+                    }
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <Button id="homepage" onclick="window.location.href='../index.html'"">Home</Button>
+        <br>
+        <h1>Welcome! See how I slide</h1>
+        <h2>See how I grow</h2>
+        <button id="move">Click Here to start or stop the slide in the text below!</button>
+        <h3>See how I go back and forth</h3>
+    </body>
+</html>

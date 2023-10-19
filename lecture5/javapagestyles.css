@@ -1,0 +1,47 @@
+html * {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+h1{
+    font-size: 30;
+    color: grey;
+    margin-top:100px;
+    margin-bottom:50px;
+}
+
+.nonbulletedlist {
+    list-style-type: none;
+    margin:auto;
+    padding-left:0;
+}
+
+.listitem {
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+.listdescription{
+    margin-bottom:40px;
+    font-size: 13px;
+}
+
+/* unvisited link */
+a:link {
+    color: lightgrey;
+    text-decoration:none;
+}
+  
+/* visited link */
+a:visited {
+    color: lightgrey;
+}
+  
+/* mouse over link */
+a:hover {
+    color:  grey;
+}
+  
+/* selected link */
+a:active {
+    color:  grey;
+}
