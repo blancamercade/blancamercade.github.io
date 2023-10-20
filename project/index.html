@@ -10,9 +10,17 @@
 <body>
     <h1>ChatterQuest</h1>
     <h1 style="margin-top: 0px;">KIDS</h1>
-    <a id="playbutton" href="readinggame.html" class="button">
+    <a id="playbutton" href="readinggame.html?set=set0" class="button">
         <img src="playbutton.png"/>
     </a>
+    <div style="height:50px"></div>
+    <div id="selectedset"></div>
+    <div>
+        <button class="selectset" id="set1" onclick="window.location.href = 'readinggame.html?set=set1';">Set 1</button>
+        <button class="selectset" id="set2" onclick="window.location.href = 'readinggame.html?set=set2';">Set 2</button>
+        <button class="selectset" id="set3" onclick="window.location.href = 'readinggame.html?set=set3';">Set 3</button>
+        <button class="selectset" id="set4" onclick="window.location.href = 'readinggame.html?set=set4';">Set 4</button>
+        <button class="selectset" id="set5" onclick="window.location.href = 'readinggame.html?set=set5';">Set 5</button>
+    </div>
 </body>
-<script src="speechRecognition.js" async></script>
 </html>
