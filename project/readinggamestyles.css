@@ -11,6 +11,7 @@ body{
     background-color: #ffe5b4; /* For browsers that do not support gradients */
     background-image: linear-gradient(#ffe5b4, #fcbcd7);
     min-height: 100dvh;
+    overflow: hidden;
 }
 
 h1{
@@ -63,4 +64,23 @@ button:hover{
     color: rgb(8, 165, 8);
     margin-top:50px;
     margin-bottom:20px;
+}
+
+.image-container {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow:hidden;
+    z-index: 2;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit:scale-down;
+}
+
+.animate {
+    width: 100%;
+    height: 100%;
 }

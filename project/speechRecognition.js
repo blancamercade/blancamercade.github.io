@@ -186,6 +186,21 @@ console.log(questionlist);
 var randomNumber = Math.floor(Math.random() * questionlist.length);
 document.getElementById("questionbox").innerHTML = questionlist[randomNumber];
 
+const imageContainer = document.querySelector(".image-container");
+
+// Function to start the animation
+function startAnimation() {
+  imageContainer.classList.add("animate");
+  setTimeout(stopAnimation, 3000); // 3000ms = 3 seconds
+}
+
+// Function to stop the animation
+function stopAnimation() {
+    imageContainer.classList.remove("animate");
+}
+
+
+
 if ("webkitSpeechRecognition" in window) {
     let question = document.querySelector("#questionbox").innerHTML.toLocaleLowerCase();
     console.log (question);
@@ -211,6 +226,10 @@ if ("webkitSpeechRecognition" in window) {
       if (final_transcript.toLowerCase()===question) {
         document.querySelector("#answer").innerHTML = "CORRECT!";
         document.querySelector("#answer").style.color = "green";
+        // Start the animation when the answer is correct
+        setTimeout(() => {
+          startAnimation();
+        }, 1000);
       } else {
         document.querySelector("#answer").innerHTML = "TRY AGAIN";
         document.querySelector("#answer").style.color = "red";
