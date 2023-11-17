@@ -1,5 +1,5 @@
-document.querySelector("#start").onclick = () => {
-  array = document.querySelector("#questionbox").value.toLocaleLowerCase();
+function spellingquestions(array){  
+  document.querySelector("#questionarea").style = "display:none";
   document.querySelector("#questionbox").value = '';
   spellinglist = array.split(",").map(function (value) {
     return value.trim();
@@ -75,3 +75,18 @@ document.querySelector("#start").onclick = () => {
     }
   }
 };
+
+document.querySelector("#start").onclick = () => {
+  array = document.querySelector("#questionbox").value.toLocaleLowerCase();
+  spellingquestions(array);
+}
+
+document.querySelector("#emma").onclick = () => {
+  array = "pencil, fossil, nostril, pupil, metal, pedal, capital, hospital, animal, oval";
+  spellingquestions(array);
+}
+
+document.querySelector("#neil").onclick = () => {
+  array = "tap, top, lap, pet, hat, cat";
+  spellingquestions(array);
+}
