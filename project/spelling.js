@@ -90,3 +90,14 @@ document.querySelector("#neil").onclick = () => {
   array = "tap, top, lap, pet, hat, cat";
   spellingquestions(array);
 }
+
+window.addEventListener('resize', function () {
+  if (window.innerWidth < window.innerHeight) {
+      // Portrait orientation, keyboard might be active
+      // Move UI elements to a better position
+      document.querySelector("#questionarea").style.display = "none"; // For example, hide the question area
+  } else {
+      // Landscape orientation, adjust UI elements accordingly
+      document.querySelector("#questionarea").style.display = "block"; // Show the question area
+  }
+});

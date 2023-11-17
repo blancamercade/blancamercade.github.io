@@ -6,13 +6,13 @@ html * {
     box-sizing: border-box;
     height: 100%;
     font-size: 105%;
+    font-size: 2vw;
 }
 
 body{
     background-color: #feefd3; /* For browsers that do not support gradients */
     background-image: linear-gradient(#feefd3, #fae5ee);
     min-height: 100dvh;
-    overflow: hidden;
 }
 
 h1{
