@@ -82,7 +82,7 @@ document.querySelector("#start").onclick = () => {
 }
 
 document.querySelector("#emma").onclick = () => {
-  array = "pencil, fossil, nostril, pupil, metal, pedal, capital, hospital, animal, oval";
+  array = "cry, fly, dry, try, reply, sly, shy, terrify, sky, multiply";
   spellingquestions(array);
 }
 
