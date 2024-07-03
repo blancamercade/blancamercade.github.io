@@ -82,7 +82,7 @@ document.querySelector("#start").onclick = () => {
 }
 
 document.querySelector("#emma").onclick = () => {
-  array = "cry, fly, dry, try, reply, sly, shy, terrify, sky, multiply";
+  array = "January, February, March, April, May, June, July, August, September, October, November, December";
   spellingquestions(array);
 }
 

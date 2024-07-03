@@ -1,0 +1,126 @@
+/* Reset */
+html, body, h1, p, button, #questionbox, .transcriptbox, #answer, .image-container, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* General Styles */
+html * {
+    font-family: 'Creepster', cursive, 'Verdana', Geneva, Tahoma, sans-serif; /* Add a gothic or horror-themed font */
+    max-width: 500px;
+    margin: auto;
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 105%;
+}
+
+/* Body and Background */
+body {
+    background-color: #1d1f21; /* Dark background */
+    background-image: linear-gradient(#1d1f21, #2e2f30); /* Gradient background */
+    color: #ffffff; /* White text color */
+    min-height: 100dvh;
+}
+
+/* Headings */
+h1 {
+    margin-top: 25px;
+    font-size: 30px;
+    color: #FF00FF; /* Hot pink color for headings */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px #000000; /* Add a shadow for a spooky effect */
+}
+
+/* Buttons */
+#playbutton {
+    background: none;
+}
+
+button {
+    background-color: #FF69B4; /* Bright pink color */
+    color: #ffffff;
+    padding: 7px 20px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border: 2px solid #8B008B; /* Darker pink border */
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #8B008B; /* Darker pink */
+    color: #ffffff;
+}
+
+/* Question Box */
+#questionbox {
+    background-color: #2e2f30;
+    border: 2px solid #FF00FF; /* Hot pink border */
+    height: 100px;
+    border-radius: 8px;
+    width: 80%;
+    padding: 40px 0;
+    resize: vertical; /* Allow vertical resizing if needed */
+    overflow-y: auto; /* Add scrollbar if content overflows vertically */
+    font-size: 80%;
+    color: #ffffff;
+}
+
+/* Transcript Box */
+.transcriptbox {
+    background-color: #2e2f30;
+    border: 2px solid #FF00FF; /* Hot pink border */
+    height: 100px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 80%;
+    padding: 40px 0;
+    color: #ffffff;
+}
+
+/* Answer */
+#answer {
+    font-size: 60px;
+    font-weight: bold;
+    color: #00FF00; /* Bright green color */
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #000000; /* Add a shadow for a spooky effect */
+}
+
+/* Image Container */
+.image-container {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: 2;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+/* Animation */
+.animate {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Adjust font sizes for screens smaller than 600px wide */
+    html {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    /* Add similar rules for other elements as needed */
+}
