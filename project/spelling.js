@@ -82,7 +82,7 @@ document.querySelector("#start").onclick = () => {
 }
 
 document.querySelector("#emma").onclick = () => {
-  array = "January, February, March, April, May, June, July, August, September, October, November, December";
+  array = "january, february, march, april, may, june, july, august, september, october, november, december";
   spellingquestions(array);
 }
 
