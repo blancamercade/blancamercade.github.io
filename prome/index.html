@@ -3,43 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perimenopause Protein Powder</title>
+  <title>MeProtein - Personalized Protein Powder</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <!-- Header Section -->
   <header>
-    <h1>Perimenopause Protein Powder</h1>
-    <nav>
-      <a href="#about">About</a>
+    <div class="logo">MeProtein</div>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <nav id="mobileMenu">
+      <a href="#home">Home</a>
+      <a href="#product">Product</a>
       <a href="#features">Features</a>
-      <a href="#waitlist">Join Waitlist</a>
+      <a href="#about">About Us</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <!-- Hero Section -->
   <section id="hero">
-    <h2>Your Personalized Solution for Perimenopause</h2>
-    <p>Designed to support hormonal balance, mood, and overall wellness.</p>
-    <a href="https://00q61un9ce5.typeform.com/to/kfuMERW9" class="cta-button" target="_blank">Join Waitlist</a>
+    <div class="hero-content">
+      <h1>MeProtein</h1>
+      <p>Personalized Protein Powder</p>
+      <!--button class="cta-button">Personalization Quiz</button-->
+      <a href="https://00q61un9ce5.typeform.com/to/kfuMERW9" class="cta-button" target="_blank">Personalisation quiz</a>
+    </div>
+    <div class="hero-image">
+      <img src="images/Heroimage.webp" alt="MeProtein Product">
+    </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Our Product</h2>
-    <p>This protein powder is tailored to support the unique needs of women in perimenopause, focusing on balanced nutrition, hormonal health, and digestibility.</p>
-  </section>
-
-  <!-- Features Section -->
+  <!-- Feature Cards Section -->
   <section id="features">
-    <h2>Personalization Options</h2>
-    <ul>
-      <li>Health Goals: Hormonal Balance, Weight Management, Stress Support, Bone Health</li>
-      <li>Dietary Preferences: Plant-Based, Dairy-Free, Allergy-Friendly</li>
-      <li>Flavor Profile: Neutral, Sweet, or Savory Options</li>
-      <li>Additional Nutrients: Skin Health, Heart Health</li>
-    </ul>
+    <div class="card">
+      <h3>Personalize Your Protein</h3>
+      <p>Custom blend tailored for your health needs.</p>
+      <button>Find Out More</button>
+    </div>
+    <div class="card">
+      <h3>Health Quiz</h3>
+      <p>Take our quiz to personalize your protein blend.</p>
+      <button>Personalize Now</button>
+    </div>
+    <div class="card">
+      <h3>Product Benefits</h3>
+      <p>Explore the unique benefits of each ingredient.</p>
+      <button>Discover</button>
+    </div>
+    <div class="card">
+      <h3>Product Status</h3>
+      <p>Track your custom product's progress.</p>
+      <button>Track Order</button>
+    </div>
   </section>
 
   <script src="script.js"></script>

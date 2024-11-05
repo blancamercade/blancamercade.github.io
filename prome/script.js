@@ -1,16 +1,15 @@
-document.getElementById("waitlistForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-  
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-  
-    // Simple simulation of form submission
-    console.log(`User signed up: ${name}, ${email}`);
-  
-    // Show a thank-you message
-    document.getElementById("thankYouMessage").style.display = "block";
-  
-    // Clear the form
-    document.getElementById("waitlistForm").reset();
+// Smooth Scrolling for Anchor Links
+document.querySelectorAll('nav a').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    document.getElementById(targetId).scrollIntoView({
+      behavior: 'smooth'
+    });
   });
-  
+});
+
+function toggleMenu() {
+  const menu = document.getElementById('mobileMenu');
+  menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+}
