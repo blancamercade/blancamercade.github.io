@@ -105,16 +105,18 @@ nav {
   font-size: 3.5rem;
   font-weight: 700;
   color: #4d4b47;
+  line-height:1.1;
 }
 
 .hero-content p {
   font-size: 1.2rem;
-  margin-top: 0.5rem;
+  margin-top: 2rem;
+  font-weight: 400;
 }
 
 .cta-button {
   display: inline-block;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   padding: 1rem 2rem;
   background-color: #b89d80; /* Soft brown button */
   color: #fff;
@@ -136,6 +138,17 @@ nav {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Intro section */
+
+.intro-content {
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack items vertically */
+  padding: 1rem 1rem;
+}
+
+.intro-content p {
+  margin-bottom: 1rem;}
 
 /* Feature Cards */
 
@@ -182,10 +195,50 @@ nav {
   transition: background-color 0.3s;
 }
 
+.card a {
+  background-color: #b89d80;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+
 .card button:hover {
   background-color: #a6896f;
 }
 
+/*Card benefits*/
+.card-benefits {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.card-benefits > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 150px; /* Adjust as needed */
+}
+
+.card-benefits img {
+  width: 60px; /* Adjust size as needed */
+  margin-bottom: 10px;
+}
+
+.card-benefits p {
+  font-size: 16px;
+  margin: 0;
+  color: #333; /* Adjust to match brand color scheme */
+}
 
 /* Additional Styling for Smoothness and Consistency */
 button, .cta-button {
