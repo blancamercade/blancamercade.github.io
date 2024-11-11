@@ -39,7 +39,6 @@ header {
 .menu-icon {
   font-size: 1.8rem;
   cursor: pointer;
-  display: none; /* Hidden on desktop */
   position: absolute;
   right: 20px; /* Position to the right */
 }
@@ -111,11 +110,10 @@ nav {
 }
 
 .hero-content p {
-  font-size: 4vw;
+  font-size: 2vw;
   margin-top: 2rem;
   font-weight: 400;
-  max-width: 90%; /* Prevents the paragraph from exceeding the width */
-  margin: 2rem auto; /* Centers the paragraph */
+  max-width: 100%; /* Prevents the paragraph from exceeding the width */
 }
 
 .cta-button {
@@ -146,11 +144,11 @@ nav {
 /* Adjust font size for larger screens (e.g., desktop) */
 @media (min-width: 1024px) {
   .hero-content h1 {
-    font-size: 3rem; /* Limit h1 size on large screens */
+    font-size: 2.5rem; /* Limit h1 size on large screens */
   }
 
   .hero-content p {
-    font-size: 1.5rem; /* Limit p size on large screens */
+    font-size: 1.2rem; /* Limit p size on large screens */
   }
 }
 
