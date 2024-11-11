@@ -41,7 +41,7 @@ header {
   cursor: pointer;
   display: none; /* Hidden on desktop */
   position: absolute;
-  left: 20px; /* Position to the left */
+  right: 20px; /* Position to the right */
 }
 
 nav {
@@ -91,7 +91,7 @@ nav {
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center items horizontally */
   justify-content: center; /* Center items vertically */
-  padding: 3rem 1rem;
+  padding: 3rem 2rem;
   color: #4d4b47;
   text-align: center;
   min-height: 60vh; /* Ensures the hero section takes up most of the viewport */
@@ -102,16 +102,20 @@ nav {
 }
 
 .hero-content h1 {
-  font-size: 3.5rem;
+  font-size: 7vw;
   font-weight: 700;
   color: #4d4b47;
   line-height:1.1;
+  max-width: 90%; /* Prevents the heading from getting too wide */
+  margin: 0 auto; /* Centers the heading */
 }
 
 .hero-content p {
-  font-size: 1.2rem;
+  font-size: 4vw;
   margin-top: 2rem;
   font-weight: 400;
+  max-width: 90%; /* Prevents the paragraph from exceeding the width */
+  margin: 2rem auto; /* Centers the paragraph */
 }
 
 .cta-button {
@@ -137,6 +141,17 @@ nav {
   margin-top: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust font size for larger screens (e.g., desktop) */
+@media (min-width: 1024px) {
+  .hero-content h1 {
+    font-size: 3rem; /* Limit h1 size on large screens */
+  }
+
+  .hero-content p {
+    font-size: 1.5rem; /* Limit p size on large screens */
+  }
 }
 
 /* Intro section */
@@ -224,7 +239,7 @@ nav {
 .card-benefits > div {
   flex: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   max-width: 150px; /* Adjust as needed */
 }
